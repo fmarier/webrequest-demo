@@ -1,0 +1,14 @@
+{
+  "description": "webRequest Demo",
+  "manifest_version": 2,
+  "name": "webrequest-demo",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "https://*.uphold.com/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
