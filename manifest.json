@@ -5,7 +5,7 @@
   "version": "1.0",
 
   "permissions": [
-    "webRequest", "webRequestBlocking", "https://*.uphold.com/*"
+    "webRequest", "webRequestBlocking", "<all_urls>"
   ],
 
   "background": {

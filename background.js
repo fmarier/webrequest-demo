@@ -1,7 +1,10 @@
 chrome.webRequest.onBeforeRequest.addListener(
   function(info) {
-    return {redirectUrl: 'https://brave.com/?orig=' + info.url};
+    return {redirectUrl: 'https://fmarier.org/?orig=' + info.url};
   },
-  {urls: ["https://*.uphold.com/*"], types: ["main_frame"]},
+  {urls: [
+      "https://*.uphold.com/*",
+      "https://*.brave.com/*",
+    ], types: ["main_frame"]},
   ["blocking"]
 );
